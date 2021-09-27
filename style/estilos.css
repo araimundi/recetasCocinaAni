@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root{
+    --color-primario: #b0f2c2;
+    --color-header:#b186f1;
+    --color-footer:#ffda9e;
+    --color-modal:rgb(190, 171, 214);
+    --color-card:rgb(190, 171, 214);
+    --fuente:'Roboto Slab', serif;
+    --color-negro: rgb(0, 0, 0);
+    --color-blanco: rgb(255, 255, 255);
+    --color-link: rgb(69, 19, 134);
+    --color-texto: #45484a;
+    --color-titulo:rgb(4, 145, 150);
+    --color-linea-div:rgb(4, 145, 150);
+    --color-linea-tabla:rgb(4, 145, 150);
+    --color-botone:rgb(3, 56, 58);
+    --ancho-max: 900px;
+    --altura-header: 3rem;
+}
+
+/*****************/
+/* SETEO INICIAL */
+/*****************/
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+    color: var(--color-link);
+    transition: all 0.7s ease-out;
+  }
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {   margin: 0; }
+
+h1 {   font-size: 2rem; }
+h2 {   font-size: 1.5rem; }
+h3 {   font-size: 1.25rem; }
+h4 {   font-size: 1rem; }
+h5 {   font-size: 0.85rem; }
+h6 {   font-size: 0.7rem; }
+
+html {
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+p {   
+      line-height: 1.6; 
+ }
+
+ label{
+    font-family: var(--fuente);
+    font-size: 16px;
+ }
+
+
+
+/* MWDUIA QUERIES */
+
+ 
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+
+/***************/
+/* COMPONENTES */
+/***************/
+
+  .a {
+    padding: 0.3rem;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-link);
+  }
+
+  table {
+    width: 500 px;
+    background-color: white;
+    border: 1px solid #000;  
+  }
+
+  th {
+    background-color: rgb(240, 216, 6);    
+  } 
+
+  th, tr, td {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 1rm;
+    border-collapse: collapse;
+  }
+
+    
+/* MWDUIA QUERIES */
+
+    @media screen and (min-width: 768px) {
+
+    }
+    
+    @media screen and (min-width: 1024px) {
+     
+    }
+  
+
+/***************/
+/* UTILIDADES  */
+/***************/
+
+.section {   
+    padding: 2rem 1rem; 
+ }
+
+.section-title {
+ border-bottom: 1px var(--color-linea-div)solid;
+ border-top: 1px var(--color-linea-div) solid;
+ color: var(--color-titulo);
+ margin: 2rem auto;
+ padding: 0.5rem 1rem;
+ text-align: center;
+ width: 500px;
+ }
+
+ .presenacion{
+     text-align: center;
+     font-weight: bold;
+ }
+ 
+ /*  lista de recetas */
+
+ .textoReceta{
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    margin: 0 auto;
+ }
+
+ .textoReceta img {
+    width: 500px;
+    object-fit: cover;
+    border: ridge solid var(--color-linea-div);
+ }
+
+ .listaRecetas {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: thin solid var(--color-linea-div);
+  }
+  
+  .listaRecetas img {
+    width: 30px;
+    object-fit: cover;
+  }
+
+  .listaRecetas a{
+      color:rgb(4, 145, 150);
+  }
+  
+  .listaRecetas-info {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+   /* Fin lista de recetas */
+
+/* elementos */
+
+  .listaElementos {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: thin solid var(--color-linea-div);
+    align-items: center;
+  }
+  
+  .listaElementos img {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+  }
+  .listaElementos-info {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+.elemento-card {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.elemento-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.elemento-card-info {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--color-header);
+  color: var(--color-negro);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.elemento-card-info > div {
+  padding: 1rem;
+  border: thin solid var(--color-linea-div);
+  width: 100%;
+  height: 100%;
+}
+/* FIN Elemento */
+
+
+
+  .estilo_button{
+    background-color: var(--color-);
+ }
+
+
+
+/*********************/
+/* ESTILOS DEL SITIO */
+/*********************/
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+  
+footer {
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--color-negro);
+    background-color: var(--color-footer);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.header {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: var(--altura-header);
+    background-color: var(--color-header);
+    color: var(--color-negro);
+  }
+
+.header > .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  /* Experiencia */
+
+.trabajo-card {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.trabajo-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.trabajo-card-info {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--color-card);
+  color: var(--color-negro);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.trabajo-card-info > div {
+  padding: 1rem;
+  border: thin solid var(--color-linea-div);
+  width: 100%;
+  height: 100%;
+}
+/* FIN Experiencia */
+
+
+  /* MWDUIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+ .trabajo-card {  
+    border-radius: 50%; }
+
+.trabajo-card img {   
+   border-radius: 50%; }
+
+.trabajo-card:hover img{
+   border-radius: 0%;
+   transition: .5s;
+}
+
+  .trabajos > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .trabajo-card-info {
+    position: absolute;
+    opacity: 0;    
+  }
+
+  .trabajo-card:hover .trabajo-card-info {
+    border-radius: 0%;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .trabajos .section-title {     
+    grid-column: span 2;   }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .logoDiv{
+        padding-left: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+      }
+
+    .menuRecetas > .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    
+    .menuRecetas.section-title {     
+          grid-column: span 3;   
+     }
+
+     .modalDiv{
+        background-color: var(--color-modal);
+        font-family: var(--fuente);
+        font-size: 16px;
+        color: var(--color-negro);
+     }
+
+      .containerRecetas {
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        
+      }
+
+      .container-elementos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+      }
+
+
+
+      .trabajos > .container {
+        padding: 3rm;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2rm;
+      }
+    
+      .trabajos .section-title {    
+         grid-column: span 3;   
+        }
+
+
+    }
+  
