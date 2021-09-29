@@ -373,9 +373,14 @@ footer {
     .logoDiv{
         padding-left: 1rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 300px 650px 100px;
         align-items: center;
       }
+
+     .volverDiv{
+      padding-left: 1rem;
+      align-items: flex-end;
+     }
 
     .menuRecetas > .container {
         display: grid;
