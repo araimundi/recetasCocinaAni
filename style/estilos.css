@@ -17,6 +17,7 @@
     --color-botone:rgb(3, 56, 58);
     --ancho-max: 900px;
     --altura-header: 3rem;
+    --altura-header2:5rem;
 }
 
 /*****************/
@@ -31,7 +32,7 @@
 a {
     color: var(--color-link);
     transition: all 0.7s ease-out;
-  }
+}
 
 
 body {
@@ -53,22 +54,22 @@ html {
     font-family: var(--fuente);
     font-size: 16px;
     scroll-behavior: smooth;
-  }
+}
 
 
 img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 p {   
       line-height: 1.6; 
- }
+}
 
- label{
+label{
     font-family: var(--fuente);
     font-size: 16px;
- }
+}
 
 
 
@@ -112,6 +113,18 @@ p {
     padding: 1rm;
     border-collapse: collapse;
   }
+
+  .modalDiv{
+    background-color: var(--color-modal);
+    font-family: var(--fuente);
+    font-size: 16px;
+    color: var(--color-negro);
+  }
+
+ .estilo_button{
+  background-color: var(--color-);
+  }
+
 
     
 /* MWDUIA QUERIES */
@@ -210,6 +223,7 @@ p {
     object-fit: cover;
     align-items: center;
   }
+
   .listaElementos-info {
     top: 0;
     left: 0;
@@ -220,43 +234,37 @@ p {
   }
 
 
-.elemento-card {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-}
+  .elemento-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 
-.elemento-card img {
-  width: 100%;
-  object-fit: cover;
-}
+  .elemento-card img {
+    width: 100%;
+    object-fit: cover;
+  }
 
-.elemento-card-info {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: var(--color-header);
-  color: var(--color-negro);
-  pointer-events: none;
-  transition: all 0.5s ease-in-out;
-}
+  .elemento-card-info {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--color-header);
+    color: var(--color-negro);
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+  }
 
-.elemento-card-info > div {
-  padding: 1rem;
-  border: thin solid var(--color-linea-div);
-  width: 100%;
-  height: 100%;
-}
+  .elemento-card-info > div {
+    padding: 1rem;
+    border: thin solid var(--color-linea-div);
+    width: 100%;
+    height: 100%;
+  }
 /* FIN Elemento */
-
-
-
-  .estilo_button{
-    background-color: var(--color-);
- }
 
 
 
@@ -280,7 +288,7 @@ footer {
 .container {
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .header {
     left: 0;
@@ -289,13 +297,24 @@ footer {
     height: var(--altura-header);
     background-color: var(--color-header);
     color: var(--color-negro);
-  }
+}
 
 .header > .container {
     justify-content: space-between;
     align-items: center;
-  }
+}
 
+.logoDiv {
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    align-items: center;
+}
+
+.volverDiv{
+    padding-left: 1rem;
+    align-items: flex-end;
+}
 
   /* Experiencia */
 
@@ -334,18 +353,40 @@ footer {
 
   /* MWDUIA QUERIES */
 
+@media screen and (max-width: 768px) {
+
+  .header{
+    height: var(--altura-header2);
+  }
+
+  .logoDiv {
+    padding: 0.5rem;
+  }
+
+  .logoDiv  h1{
+      font-size: 1.5rem;
+  }
+
+  .volverDiv{
+    padding-left: 0rem;
+    align-items: flex-end;
+  }
+}
+
 @media screen and (min-width: 768px) {
 
- .trabajo-card {  
-    border-radius: 50%; }
+  .trabajo-card {  
+      border-radius: 50%; 
+    }
 
-.trabajo-card img {   
-   border-radius: 50%; }
+  .trabajo-card img {   
+    border-radius: 50%; 
+    }
 
-.trabajo-card:hover img{
-   border-radius: 0%;
-   transition: .5s;
-}
+  .trabajo-card:hover img{
+    border-radius: 0%;
+    transition: .5s;
+  }
 
   .trabajos > .container {
     display: grid;
@@ -364,65 +405,49 @@ footer {
   }
 
   .trabajos .section-title {     
-    grid-column: span 2;   }
+    grid-column: span 2;   
+  }
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    .logoDiv{
-        padding-left: 1rem;
-        display: grid;
-        grid-template-columns: 300px 650px 100px;
-        align-items: center;
-      }
-
-     .volverDiv{
-      padding-left: 1rem;
-      align-items: flex-end;
-     }
-
-    .menuRecetas > .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-      }
-    
-    .menuRecetas.section-title {     
-          grid-column: span 3;   
-     }
-
-     .modalDiv{
-        background-color: var(--color-modal);
-        font-family: var(--fuente);
-        font-size: 16px;
-        color: var(--color-negro);
-     }
-
-      .containerRecetas {
-        display: grid;
-        grid-template-columns: 600px 1fr;
-        
-      }
-
-      .container-elementos {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-      }
 
 
-
-      .trabajos > .container {
-        padding: 3rm;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 2rm;
-      }
-    
-      .trabajos .section-title {    
-         grid-column: span 3;   
-        }
-
-
+  .menuRecetas > .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
+  
+  .menuRecetas.section-title {     
+        grid-column: span 3;   
+    }
+
+
+  .containerRecetas {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    
+  }
+
+  .container-elementos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+  }
+
+
+  .trabajos > .container {
+    padding: 3rm;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rm;
+  }
+    
+  .trabajos .section-title {    
+      grid-column: span 3;   
+    }
+
+
+}
   
