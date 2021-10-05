@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="STYLESHEET" href="style/estilos.css">
     <link rel="icon" href="img/horno_pasteleria.ico" type="image/x-icon" />
-    <!-- TAGS SEO Y SMO -->
     <title>Proyecto html CAC Python - Comisión 1119</title>
     <script src="https://kit.fontawesome.com/b5233b7774.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <header class="header">
+    <script>
+        function finContacto() {
+          alert("Gracias por contactarse con nosotros");
+        }
+    </script>
 
+    <header class="header">
         <section class="container">
             <div class="logoDiv">
                 <h1> <img src="img/horno_pasteleria.ico" alt="hornito" width="30"> Binary Cokkies</h1>
-                <nav>
-                    <a href="#secPresentacion">Presentacion</a> |
-                    <a href="#secRecetas">Recetas</a> |
-                    <a href="#secContacto">Contacto</a> |
-                    <a href="tablaMedidas.html">Tablas de medidas</a> |
-                    <a href="herramientasCocina.html">Tablas de medidas</a> |
-                </nav>
+                <div >
+                    <nav>
+                        <a href="#secPresentacion">Presentacion</a> |
+                        <a href="#secRecetas">Recetas</a> |
+                        <a href="#secContacto">Contacto</a> |
+                        <a href="tablaMedidas.html">Tablas de medidas</a> |
+                        <a href="herramientasCocina.html">Tablas de medidas</a> |
+                    </nav>
+                </div>
+                <div class="volverDiv"></div>
             </div>
         </section>
-
     </header>
 
     <main>
@@ -40,10 +44,10 @@
             <p class="presenacion">
                 Soy Anabel, trabajo en sistemas y me gista cocinar desde chica, sobre todo amo la pasteleria <br>
                 Quiero cmpartir en esta pagina dos cosas que disfruto mucho hacer: progarmar y cocinar.<br>            
-                Aca dejo unas <a href="tablaMedidas.html"> <img src="img/iconoBalanza.png" width="20" alt="tabla de medidas"> <strong><i > Tablas de medidas </i> </strong>  </a>   
+                Aca dejo unas <a href="tablaMedidas.html"> <img src="img/iconoBalanza.png" width="30" alt="tabla de medidas"> <strong>Tablas de medidas </strong>  </a>   
                 que son super utiles para hacer cualquier receta.<br>
                 
-                Tambien podes encontra una  <a href="herramientasCocina.html"> <img src="img/batidor y palo.png" width="20" alt="Herramientas en la cocina"> lista de elementos basicos </a> que necesitamos en la cocina para arrancar con pasteleria y 
+                Tambien podes encontra una  <a href="herramientasCocina.html"> <img src="img/batidor y palo.png" width="30" alt="Herramientas en la cocina"><strong> lista de elementos basicos </strong>  </a> que necesitamos en la cocina para arrancar con pasteleria y 
                 algunos links donde conseguis de todo y a buen precio <br>
                 A animarse a cocinar en casa!!!        
             </p> 
@@ -91,38 +95,39 @@
                 Si queres podes mandarnos tus recetas para agregar al sitio y tambien algun comentario o dudas
             </p>
             <div class="container">
-                <form>
+                <form  onsubmit="finContacto()">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp"
-                        placeholder="Ingrese su nombre">
+                        placeholder="Ingrese su nombre" required>
                     </div>
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" aria-describedby="apellidoHelp"
-                        placeholder="Ingrese su Apellido">                    
+                        placeholder="Ingrese su Apellido" required>                    
                     </div>
                     <div class="mb-3">
                         <label for="dirEmail" class="form-label">Email</label>
                         <input type="email" class="form-control" id="dirEmail" aria-describedby="emailHelp"
-                        placeholder="Ingrese su email">
+                        placeholder="Ingrese su email" required>
                         <div id="emailHelp" class="form-text">No compartimos su información.</div>
                     </div>
                     <div class="mb-3">
                         <label for="textContaco" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="textContaco" rows="4"></textarea>
-                        <div id="emailHelp" class="form-text">Ingresa el texto del mensaje.</div>
+                        <textarea class="form-control" id="textContaco" rows="4" placeholder="Ingrese el texto del mensaje" 
+                        placeholder="Ingrese su email" required></textarea>
+
                     </div>
                     
                     <div class="input-group mb-3">
                         <div class="custom-file">
-                            <label class="custom-file-label" for="inputGroupFile02">Adjuntar Archivo</label>
-                            <input type="file" class="custom-file-input" id="inputGroupFile02">                      
+                            <label class="form-label" for="inputGroupFile02">Adjuntar Archivo</label> <br>
+                            <input type="file" class="form-label" id="inputGroupFile02">                      
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <button type="submit" class="btn  btn-success" > <!--data-bs-toggle="modal" data-bs-target="#staticBackdrop">!-->
                             Enviar
                         </button>
                     </div>
