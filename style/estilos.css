@@ -208,62 +208,39 @@ label{
 
 /* elementos */
 
-  .listaElementos {
-    position: relative;
-    padding: 1rem;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    border: thin solid var(--color-linea-div);
-    align-items: center;
-  }
   
-  .listaElementos img {
-    width: 100%;
-    object-fit: cover;
-    align-items: center;
-  }
+.elemento-card {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
 
-  .listaElementos-info {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    transition: all 0.5s ease-in-out;
-  }
+.elemento-card img {
+  width: 100%;
+  object-fit: cover;
+}
 
+.elemento-card-info {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: var(--color-card);
+  color: var(--color-negro);
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
 
-  .elemento-card {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-  }
+.elemento-card-info > div {
+  padding: 1rem;
+  border: thin solid var(--color-linea-div);
+  width: 100%;
+  height: 100%;
+}
 
-  .elemento-card img {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  .elemento-card-info {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background-color: var(--color-header);
-    color: var(--color-negro);
-    pointer-events: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .elemento-card-info > div {
-    padding: 1rem;
-    border: thin solid var(--color-linea-div);
-    width: 100%;
-    height: 100%;
-  }
+  
 /* FIN Elemento */
 
 
@@ -316,39 +293,7 @@ footer {
     align-items: flex-end;
 }
 
-  /* Experiencia */
-
-.trabajo-card {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-}
-
-.trabajo-card img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.trabajo-card-info {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: var(--color-card);
-  color: var(--color-negro);
-  pointer-events: none;
-  transition: all 0.5s ease-in-out;
-}
-
-.trabajo-card-info > div {
-  padding: 1rem;
-  border: thin solid var(--color-linea-div);
-  width: 100%;
-  height: 100%;
-}
-/* FIN Experiencia */
+ 
 
 
   /* MWDUIA QUERIES */
@@ -375,38 +320,32 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-  .trabajo-card {  
-      border-radius: 50%; 
-    }
 
-  .trabajo-card img {   
+  /* elemntos*/
+
+  .elemento-card {  
     border-radius: 50%; 
-    }
+  }
 
-  .trabajo-card:hover img{
+  .elemento-card img {   
+    border-radius: 50%; 
+  }
+
+  .elemento-card:hover img{
     border-radius: 0%;
     transition: .5s;
   }
 
-  .trabajos > .container {
+  .elementos > .container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
 
-  .trabajo-card-info {
+  .elemento-card-info {
     position: absolute;
     opacity: 0;    
   }
 
-  .trabajo-card:hover .trabajo-card-info {
-    border-radius: 0%;
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .trabajos .section-title {     
-    grid-column: span 2;   
-  }
 
 }
 
@@ -430,23 +369,20 @@ footer {
     
   }
 
-  .container-elementos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-  }
 
 
-  .trabajos > .container {
+  .elementos > .container {
     padding: 3rm;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 2rm;
   }
     
-  .trabajos .section-title {    
+  .elementos .section-title {    
       grid-column: span 3;   
     }
+
+
 
 
 }
