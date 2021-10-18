@@ -9,7 +9,7 @@
     --fuente:'Roboto Slab', serif;
     --color-negro: rgb(0, 0, 0);
     --color-blanco: rgb(255, 255, 255);
-    --color-link: rgb(69, 19, 134);
+    --color-link: rgb(87, 43, 70);
     --color-texto: #45484a;
     --color-titulo:rgb(4, 145, 150);
     --color-linea-div:rgb(4, 145, 150);
@@ -32,6 +32,7 @@
 a {
     color: var(--color-link);
     transition: all 0.7s ease-out;
+    font-size: 18px;
 }
 
 
@@ -70,6 +71,8 @@ label{
     font-family: var(--fuente);
     font-size: 16px;
 }
+
+
 
 
 
@@ -282,15 +285,21 @@ footer {
 
 }
 
-.logoDiv {
+.headerDiv {
     display: grid;
     grid-template-columns: 30% 60% 10%;
     align-items: center;
 }
 
+.logoDiv{
+  padding-left: 1rem;
+  align-items: center;
+  text-align: left;
+}
+
 .volverDiv{
     padding-left: 1rem;
-    align-items: flex-end;
+    align-items: center;
 }
 
  
@@ -298,7 +307,7 @@ footer {
 
   /* MWDUIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
   .header{
     height: var(--altura-header2);

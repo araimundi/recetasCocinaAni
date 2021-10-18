@@ -7,7 +7,7 @@ const secciones = [
   ruta: 'tablaMedidas.html'
 }, 
 {
-  seccion: 'Herraminetas | ',
+  seccion: 'Herramientas | ',
   ruta: 'herramientasCocina.html'
 }
 ];
