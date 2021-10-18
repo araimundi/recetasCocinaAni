@@ -315,15 +315,14 @@ footer {
 
   .headerDiv {
     padding: 0.5rem;
+    align-items: center;
   }
 
-  .headerDiv  h1{
-      font-size: 1.5rem;
-  }
+
 
   .volverDiv{
     padding-left: 0rem;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .menuRecetas.section-title {     
