@@ -17,7 +17,8 @@
     --color-botone:rgb(3, 56, 58);
     --ancho-max: 900px;
     --altura-header: 3rem;
-    --altura-header2: 6rem;
+    --altura-header2: 4rem;
+    --altura-header3: 6rem;
 }
 
 /*****************/
@@ -32,7 +33,7 @@
 a {
     color: var(--color-link);
     transition: all 0.7s ease-out;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -43,7 +44,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {   margin: 0; }
 
-h1 {   font-size: 2rem; }
+h1 {   font-size: 1.75rem; }
 h2 {   font-size: 1.5rem; }
 h3 {   font-size: 1.25rem; }
 h4 {   font-size: 1rem; }
@@ -93,7 +94,7 @@ label{
 
   .a {
     padding: 0.3rem;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -101,7 +102,7 @@ label{
   }
 
   table {
-    width: 500 px;
+    width: 75%;
     background-color: white;
     border: 1px solid #000;  
   }
@@ -115,6 +116,8 @@ label{
     border: 1px solid #000;
     padding: 1rm;
     border-collapse: collapse;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .modalDiv{
@@ -273,7 +276,6 @@ footer {
 .header {
     left: 0;
     bottom: 0;
-    width: 100%;
     height: var(--altura-header);
     background-color: var(--color-header);
     color: var(--color-negro);
@@ -282,6 +284,7 @@ footer {
 .header > .container {
     justify-content: space-between;
     align-items: center;
+    height: var(--altura-header);  
 }
 
 .headerDiv {
@@ -290,12 +293,13 @@ footer {
   align-items: center;
 }
 
-.logoDiv{
+.logoDiv {
     padding-left: 1rem;
     align-items: center;
     margin-right: 2px;
     text-align: left;
 }
+
 
 .volverDiv{
     padding-left: 1rem;
@@ -307,27 +311,73 @@ footer {
 
   /* MWDUIA QUERIES */
 
-  @media screen and  (max-width: 1023px){
+  @media screen and (max-width: 760px) {
 
+    .header{
+      height: var(--altura-header3);
+    }
 
-  .header{
-    height: var(--altura-header2);
+    .header > .container {
+      height: var(--altura-header3);  
+    }
+
+    .headerDiv {
+      display: flex;
+      padding: 0.5rem;
+      align-items: center;
+      height: var(--altura-header3);  
+      align-items: center;
+    }
+
+    .logoDiv{
+      height: var(--altura-header3);  
+    }
+
+    .volverDiv{
+      padding-left: 0rem;
+      align-items: center;
+
+    }
+
+    .menuRecetas.section-title {     
+      width: 50%;  
+    }
+
   }
 
-  .headerDiv {
-    display: flex;
-    padding: 0.5rem;
-    align-items: center;
-  }
+  @media screen and (min-width: 761px) and (max-width: 1023px){
 
-  .volverDiv{
-    padding-left: 0rem;
-    align-items: center;
-  }
 
-  .menuRecetas.section-title {     
-    width: 50%;  
-  }
+    .header{
+      height: var(--altura-header2);
+    }
+
+    .header > .container {
+      height: var(--altura-header2);  
+    }
+
+    .headerDiv {
+      display: flex;
+      padding: 0.5rem;
+      align-items: center;
+      height: var(--altura-header2);  
+      align-items: center;
+    }
+
+    .volverDiv{
+      padding-left: 0rem;
+      align-items: center;
+      height: var(--altura-header2);  
+    }
+
+    .logoDiv{
+      height: var(--altura-header2);  
+    }
+
+    .menuRecetas.section-title {     
+      width: 50%;  
+    }
+
 }
 
 @media screen and (min-width: 768px) {
