@@ -17,7 +17,7 @@
     --color-botone:rgb(3, 56, 58);
     --ancho-max: 900px;
     --altura-header: 3rem;
-    --altura-header2:5rem;
+    --altura-header2:6rem;
 }
 
 /*****************/
@@ -313,11 +313,11 @@ footer {
     height: var(--altura-header2);
   }
 
-  .logoDiv {
+  .headerDiv {
     padding: 0.5rem;
   }
 
-  .logoDiv  h1{
+  .headerDiv  h1{
       font-size: 1.5rem;
   }
 
