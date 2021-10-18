@@ -17,7 +17,7 @@
     --color-botone:rgb(3, 56, 58);
     --ancho-max: 900px;
     --altura-header: 3rem;
-    --altura-header2: 8rem;
+    --altura-header2: 6rem;
 }
 
 /*****************/
@@ -285,8 +285,9 @@ footer {
 }
 
 .headerDiv {
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logoDiv{
@@ -306,7 +307,8 @@ footer {
 
   /* MWDUIA QUERIES */
 
-@media screen and (max-width: 1024px) {
+  @media screen and  (max-width: 1023px){
+
 
   .header{
     height: var(--altura-header2);
@@ -387,11 +389,7 @@ footer {
       grid-column: span 3;   
     }
 
-  .headerDiv {
-      display: grid;
-      grid-template-columns: 30% 60% 10%;
-      align-items: center;
-  }
+
 
 
 }
