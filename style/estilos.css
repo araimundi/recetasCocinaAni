@@ -64,7 +64,7 @@ img {
 }
 
 p {   
-      line-height: 1.6; 
+    line-height: 1.6; 
 }
 
 label{
@@ -124,8 +124,8 @@ label{
     color: var(--color-negro);
   }
 
- .estilo_button{
-  background-color: var(--color-botone);
+  .estilo_button{
+    background-color: var(--color-botone);
   }
 
 
@@ -285,15 +285,15 @@ footer {
 }
 
 .headerDiv {
-    display: grid;
-    grid-template-columns: 30% 60% 10%;
-    align-items: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logoDiv{
-  padding-left: 1rem;
-  align-items: center;
-  text-align: left;
+    padding-left: 1rem;
+    align-items: center;
+    margin-right: 2px;
+    text-align: left;
 }
 
 .volverDiv{
@@ -361,8 +361,6 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
-
-
   .menuRecetas > .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -372,14 +370,11 @@ footer {
         grid-column: span 3;   
     }
 
-
   .containerRecetas {
     display: grid;
     grid-template-columns: 600px 1fr;
     
   }
-
-
 
   .elementos > .container {
     padding: 3rm;
@@ -392,7 +387,11 @@ footer {
       grid-column: span 3;   
     }
 
-
+  .headerDiv {
+      display: grid;
+      grid-template-columns: 30% 60% 10%;
+      align-items: center;
+  }
 
 
 }
