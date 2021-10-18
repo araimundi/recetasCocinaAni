@@ -282,7 +282,6 @@ footer {
 .header > .container {
     justify-content: space-between;
     align-items: center;
-
 }
 
 .headerDiv {
@@ -314,11 +313,10 @@ footer {
   }
 
   .headerDiv {
+    display: flex;
     padding: 0.5rem;
     align-items: center;
   }
-
-
 
   .volverDiv{
     padding-left: 0rem;
