@@ -142,23 +142,56 @@
             </div>
         </section>
 
-        <section class="section" id="secPresentacion"></section>
-            <div class="listaCompras">
-                <h2 class="section-title">Donde comprar</h2>
-                <p class="presenacion">
-                    Estos son algunos de los lugares donde yo compro y donde se consigue de todo.
-                    <br><br>
-                    <a target="lugaresRecomendados" href="http://donaclara.com.ar/ecommerce/" > Doña Clara - Reposteria y elementos de cocina </a> <br>
-                    <a target="lugaresRecomendados" href="https://www.sprinklesmore.com/" > Sprinkles & More - Reposteria y elementos de cocina </a> <br>
-                    <a target="lugaresRecomendados" href="https://www.chocolatesfenix.com/" > Chocolates Fenix - Chocolates</a> <br>
-                    <a target="lugaresRecomendados" href="https://frutosare.com.ar/" > Frutos Are - Dietetica y productos para celiacos </a> 
-                     <br> <br>                
-                    <iframe name="lugaresRecomendados" src="http://donaclara.com.ar/ecommerce/" 
-                        width="900" height="300"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe> 
-                </p>
-                              
+        <section class="listaCompras" >
+ 
+            <div>
+                <div>
+                    <h2 class="section-title">Donde comprar</h2>
+                    <p class="presenacion">
+                        Estos son algunos de los lugares donde yo compro y donde se consigue de todo.
+                    </p>
+                </div>
+
+                <div id="carouselIndicators" class="carousel slide sitiosCarrousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Doña Clara"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"  aria-label="Sprinkes & MoreFenix"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"  aria-label="Frutos Are"></button>
+                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Fenix"></button>
+                    </div>
+                    <div class="carousel-inner "> 
+                        <div class="carousel-item active">
+                            <a target="_blank" href="http://donaclara.com.ar/ecommerce/" >
+                                <img src="img/doñaClara.jpeg" class="d-block w-100" alt="Doña Clara" >
+                            </a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a target="_blank" href="https://www.sprinklesmore.com/" >
+                                <img src="img/Sprinkles&More.jpeg" class="d-block w-100" alt="Sprinkes & MoreFenix">
+                            </a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a target="_blank" href="https://www.chocolatesfenix.com/" > 
+                                <img src="img/fenix.jpeg" class="d-block w-100" alt="Frutos Are" >
+                            </a>
+                        </div>
+                        <div class="carousel-item ">
+                            <a target="_blank" href="https://frutosare.com.ar/" > 
+                                <img src="img/frutosAre.jpeg" class="d-block w-100" alt="Fenix" >
+                            </a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
+     
     </section>
 </main>
 
@@ -166,5 +199,6 @@
     CAC Fullstack Python 2021 - Docente: Regina N. Molares- Alumna: Anabel Raimundi
 </footer>
 
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

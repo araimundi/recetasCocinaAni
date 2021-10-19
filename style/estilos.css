@@ -209,6 +209,26 @@ label{
     transition: all 0.5s ease-in-out;
   }
 
+  .listaCompras{
+    padding: 2rem 1rem;
+    align-content: center;
+  }
+
+
+  .sitiosCarrousel{
+    width: 40%;
+    text-align: center;
+    margin-left: 5;
+    padding: 2rem;
+    background-color: seagreen;
+    margin-left:300px;
+  }
+
+  .botonSlice{
+    background-color: seagreen;
+  }
+
+
 
    /* Fin lista de recetas */
 
@@ -319,6 +339,7 @@ footer {
 
     .header > .container {
       height: var(--altura-header3);  
+      align-items: center;
     }
 
     .headerDiv {
@@ -326,7 +347,6 @@ footer {
       padding: 0.5rem;
       align-items: center;
       height: var(--altura-header3);  
-      align-items: center;
     }
 
     .logoDiv{
@@ -336,7 +356,6 @@ footer {
     .volverDiv{
       padding-left: 0rem;
       align-items: center;
-
     }
 
     .menuRecetas.section-title {     
@@ -354,25 +373,15 @@ footer {
 
     .header > .container {
       height: var(--altura-header2);  
+      align-items: center;
     }
 
     .headerDiv {
-      display: flex;
-      padding: 0.5rem;
-      align-items: center;
-      height: var(--altura-header2);  
+      display: grid;
+      grid-template-columns: 30% 60% 10%;
       align-items: center;
     }
 
-    .volverDiv{
-      padding-left: 0rem;
-      align-items: center;
-      height: var(--altura-header2);  
-    }
-
-    .logoDiv{
-      height: var(--altura-header2);  
-    }
 
     .menuRecetas.section-title {     
       width: 50%;  
