@@ -74,20 +74,6 @@ label{
 }
 
 
-
-
-
-/* MWDUIA QUERIES */
-
- 
-@media screen and (min-width: 768px) {
-
-}
-
-@media screen and (min-width: 1024px) {
-}
-
-
 /***************/
 /* COMPONENTES */
 /***************/
@@ -132,16 +118,6 @@ label{
   }
 
 
-    
-/* MWDUIA QUERIES */
-
-    @media screen and (min-width: 768px) {
-
-    }
-    
-    @media screen and (min-width: 1024px) {
-     
-    }
   
 
 /***************/
@@ -215,15 +191,6 @@ label{
   }
 
 
-  .sitiosCarrousel{
-    width: 40%;
-    text-align: center;
-    margin-left: 5;
-    padding: 2rem;
-    background-color: seagreen;
-    margin-left:300px;
-  }
-
   .botonSlice{
     background-color: seagreen;
   }
@@ -232,42 +199,42 @@ label{
 
    /* Fin lista de recetas */
 
-/* elementos */
+  /* elementos */
 
-  
-.elemento-card {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-}
+    
+  .elemento-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
 
-.elemento-card img {
-  width: 100%;
-  object-fit: cover;
-}
+  .elemento-card img {
+    width: 100%;
+    object-fit: cover;
+  }
 
-.elemento-card-info {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-color: var(--color-card);
-  color: var(--color-negro);
-  pointer-events: none;
-  transition: all 0.5s ease-in-out;
-}
+  .elemento-card-info {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--color-card);
+    color: var(--color-negro);
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+  }
 
-.elemento-card-info > div {
-  padding: 1rem;
-  border: thin solid var(--color-linea-div);
-  width: 100%;
-  height: 100%;
-}
+  .elemento-card-info > div {
+    padding: 1rem;
+    border: thin solid var(--color-linea-div);
+    width: 100%;
+    height: 100%;
+  }
 
-  
-/* FIN Elemento */
+    
+  /* FIN Elemento */
 
 
 
@@ -326,10 +293,32 @@ footer {
     align-items: center;
 }
 
- 
+
+.sitiosCarrousel{
+  width: 50%;
+  text-align: center;
+  margin-left: 5;
+  padding: 2rem;
+  background-color: seagreen;
+  margin-left:25%;
+}
+
 
 
   /* MWDUIA QUERIES */
+
+
+7
+/*  @media screen and (min-width: 1px) and (max-width: 759px)
+  {
+    .sitiosCarrousel{
+      width: 80%;
+      text-align: center;
+      padding: 2rem;
+      background-color: seagreen;
+      margin-left:40px;
+    }
+  }*/
 
   @media screen and (max-width: 760px) {
 
@@ -361,11 +350,13 @@ footer {
     .menuRecetas.section-title {     
       width: 50%;  
     }
+    
+
 
   }
 
-  @media screen and (min-width: 761px) and (max-width: 1023px){
-
+  @media screen and (min-width: 761px) and (max-width: 1023px)
+  {
 
     .header{
       height: var(--altura-header2);
@@ -386,11 +377,19 @@ footer {
     .menuRecetas.section-title {     
       width: 50%;  
     }
+    
+   /* .sitiosCarrousel{
+      width: 60%;
+      text-align: center;
+      padding: 2rem;
+      background-color: seagreen;
+      margin-left:150px;
+    }*/
 
 }
 
-@media screen and (min-width: 768px) {
-
+@media screen and (min-width: 768px) 
+{
 
   /* elemntos*/
 
@@ -417,10 +416,10 @@ footer {
     opacity: 0;    
   }
 
-
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) 
+{
 
   .menuRecetas > .container {
       display: grid;
@@ -446,10 +445,17 @@ footer {
     
   .elementos .section-title {    
       grid-column: span 3;   
-    }
+  }
 
-
-
+    
+ /* .sitiosCarrousel{
+    width: 40%;
+    text-align: center;
+    margin-left: 5;
+    padding: 2rem;
+    background-color: seagreen;
+    margin-left:30%;
+  }*/
 
 }
   
