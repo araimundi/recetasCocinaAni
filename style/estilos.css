@@ -274,7 +274,7 @@ footer {
     height: var(--altura-header);  
 }
 
-.headerDiv {
+.headerDiv , .headerDivInicio {
   display: grid;
   grid-template-columns: 30% 60% 10%;
   align-items: center;
@@ -308,18 +308,6 @@ footer {
   /* MWDUIA QUERIES */
 
 
-7
-/*  @media screen and (min-width: 1px) and (max-width: 759px)
-  {
-    .sitiosCarrousel{
-      width: 80%;
-      text-align: center;
-      padding: 2rem;
-      background-color: seagreen;
-      margin-left:40px;
-    }
-  }*/
-
   @media screen and (max-width: 760px) {
 
     .header{
@@ -331,12 +319,13 @@ footer {
       align-items: center;
     }
 
+
     .headerDiv {
       display: flex;
       padding: 0.5rem;
       align-items: center;
       height: var(--altura-header3);  
-    }
+    } 
 
     .logoDiv{
       height: var(--altura-header3);  
@@ -367,7 +356,7 @@ footer {
       align-items: center;
     }
 
-    .headerDiv {
+    .headerDiv , .headerDivIncio {
       display: grid;
       grid-template-columns: 30% 60% 10%;
       align-items: center;
@@ -388,7 +377,7 @@ footer {
 
 }
 
-@media screen and (min-width: 768px) 
+@media screen and (min-width: 760px) 
 {
 
   /* elemntos*/
